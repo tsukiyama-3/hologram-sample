@@ -58,9 +58,9 @@ const requestDeviceOrientationPermission = () => {
       </div>
     </div>
     <div class="text-center">
-      <p>alpha: {{ Math.round(alpha!) ?? "-" }}</p>
-      <p>beta: {{ Math.round(beta!) ?? "-" }}</p>
-      <p>gamma: {{ Math.round(gamma!) ?? "-" }}</p>
+      <p>alpha: {{ Math.round(alpha ?? 0) ?? "-" }}</p>
+      <p>beta: {{ Math.round(beta ?? 0) ?? "-" }}</p>
+      <p>gamma: {{ Math.round(gamma ?? 0) ?? "-" }}</p>=
     </div>
     <div class="flex justify-center">
       <button
